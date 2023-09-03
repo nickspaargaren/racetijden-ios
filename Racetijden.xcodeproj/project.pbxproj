@@ -16,6 +16,8 @@
 		0101E4A02AA4A42C00E29120 /* CircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E49F2AA4A42C00E29120 /* CircuitView.swift */; };
 		0101E4A12AA4A42C00E29120 /* CircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E49F2AA4A42C00E29120 /* CircuitView.swift */; };
 		019DB7A42AA4A90E0059C39A /* CircuitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */; };
+		01B5C2722AA524D400FD4EBA /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5C2712AA524D400FD4EBA /* api.swift */; };
+		01B5C2742AA52DBC00FD4EBA /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5C2732AA52DBC00FD4EBA /* models.swift */; };
 		01EBEF672AA4F97B00E75039 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EBEF662AA4F97B00E75039 /* WidgetKit.framework */; platformFilter = maccatalyst; };
 		01EBEF692AA4F97B00E75039 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EBEF682AA4F97B00E75039 /* SwiftUI.framework */; platformFilter = maccatalyst; };
 		01EBEF6C2AA4F97B00E75039 /* LatestTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBEF6B2AA4F97B00E75039 /* LatestTime.swift */; };
@@ -56,6 +58,8 @@
 		0101E4902AA499CF00E29120 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		0101E49F2AA4A42C00E29120 /* CircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitView.swift; sourceTree = "<group>"; };
 		019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitItemView.swift; sourceTree = "<group>"; };
+		01B5C2712AA524D400FD4EBA /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
+		01B5C2732AA52DBC00FD4EBA /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
 		01EBEF642AA4F97B00E75039 /* LatestTimeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LatestTimeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EBEF662AA4F97B00E75039 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		01EBEF682AA4F97B00E75039 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0101E4812AA499CA00E29120 /* RacetijdenApp.swift */,
+				01B5C2702AA524B900FD4EBA /* helpers */,
 				019DB7A52AA4AA230059C39A /* views */,
 				019DB7A22AA4A8F80059C39A /* components */,
 				0101E4832AA499CF00E29120 /* Assets.xcassets */,
@@ -146,6 +151,15 @@
 				0101E49F2AA4A42C00E29120 /* CircuitView.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		01B5C2702AA524B900FD4EBA /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				01B5C2712AA524D400FD4EBA /* api.swift */,
+				01B5C2732AA52DBC00FD4EBA /* models.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 		01EBEF652AA4F97B00E75039 /* Frameworks */ = {
@@ -296,6 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B5C2722AA524D400FD4EBA /* api.swift in Sources */,
+				01B5C2742AA52DBC00FD4EBA /* models.swift in Sources */,
 				0101E4A02AA4A42C00E29120 /* CircuitView.swift in Sources */,
 				019DB7A42AA4A90E0059C39A /* CircuitItemView.swift in Sources */,
 				0101E4932AA499CF00E29120 /* HomeView.swift in Sources */,

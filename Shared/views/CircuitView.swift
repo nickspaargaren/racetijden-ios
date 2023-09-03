@@ -1,9 +1,3 @@
-//
-//  CircuitView.swift
-//
-//  Created by Nick Spaargaren on 03/09/2023.
-//
-
 import SwiftUI
 
 struct CircuitView: View {
