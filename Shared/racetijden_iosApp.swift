@@ -11,7 +11,7 @@ import SwiftUI
 struct racetijden_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

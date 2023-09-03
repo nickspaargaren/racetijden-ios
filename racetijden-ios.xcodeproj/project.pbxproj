@@ -9,19 +9,24 @@
 /* Begin PBXBuildFile section */
 		0101E4912AA499CF00E29120 /* racetijden_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4812AA499CA00E29120 /* racetijden_iosApp.swift */; };
 		0101E4922AA499CF00E29120 /* racetijden_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4812AA499CA00E29120 /* racetijden_iosApp.swift */; };
-		0101E4932AA499CF00E29120 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4822AA499CA00E29120 /* ContentView.swift */; };
-		0101E4942AA499CF00E29120 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4822AA499CA00E29120 /* ContentView.swift */; };
+		0101E4932AA499CF00E29120 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4822AA499CA00E29120 /* HomeView.swift */; };
+		0101E4942AA499CF00E29120 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4822AA499CA00E29120 /* HomeView.swift */; };
 		0101E4952AA499CF00E29120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0101E4832AA499CF00E29120 /* Assets.xcassets */; };
 		0101E4962AA499CF00E29120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0101E4832AA499CF00E29120 /* Assets.xcassets */; };
+		0101E4A02AA4A42C00E29120 /* CircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E49F2AA4A42C00E29120 /* CircuitView.swift */; };
+		0101E4A12AA4A42C00E29120 /* CircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E49F2AA4A42C00E29120 /* CircuitView.swift */; };
+		019DB7A42AA4A90E0059C39A /* CircuitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0101E4812AA499CA00E29120 /* racetijden_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racetijden_iosApp.swift; sourceTree = "<group>"; };
-		0101E4822AA499CA00E29120 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0101E4822AA499CA00E29120 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0101E4832AA499CF00E29120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0101E4882AA499CF00E29120 /* racetijden-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "racetijden-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0101E48E2AA499CF00E29120 /* racetijden-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "racetijden-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0101E4902AA499CF00E29120 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		0101E49F2AA4A42C00E29120 /* CircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitView.swift; sourceTree = "<group>"; };
+		019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				0101E4812AA499CA00E29120 /* racetijden_iosApp.swift */,
-				0101E4822AA499CA00E29120 /* ContentView.swift */,
+				019DB7A52AA4AA230059C39A /* views */,
+				019DB7A22AA4A8F80059C39A /* components */,
 				0101E4832AA499CF00E29120 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +82,23 @@
 				0101E4902AA499CF00E29120 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		019DB7A22AA4A8F80059C39A /* components */ = {
+			isa = PBXGroup;
+			children = (
+				019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		019DB7A52AA4AA230059C39A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0101E4822AA499CA00E29120 /* HomeView.swift */,
+				0101E49F2AA4A42C00E29120 /* CircuitView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0101E4932AA499CF00E29120 /* ContentView.swift in Sources */,
+				0101E4A02AA4A42C00E29120 /* CircuitView.swift in Sources */,
+				019DB7A42AA4A90E0059C39A /* CircuitItemView.swift in Sources */,
+				0101E4932AA499CF00E29120 /* HomeView.swift in Sources */,
 				0101E4912AA499CF00E29120 /* racetijden_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0101E4942AA499CF00E29120 /* ContentView.swift in Sources */,
+				0101E4A12AA4A42C00E29120 /* CircuitView.swift in Sources */,
+				0101E4942AA499CF00E29120 /* HomeView.swift in Sources */,
 				0101E4922AA499CF00E29120 /* racetijden_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
