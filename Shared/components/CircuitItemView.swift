@@ -1,6 +1,5 @@
 //
 //  CircuitItemView.swift
-//  racetijden-ios (iOS)
 //
 //  Created by Nick Spaargaren on 03/09/2023.
 //

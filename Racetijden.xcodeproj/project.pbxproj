@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0101E4912AA499CF00E29120 /* racetijden_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4812AA499CA00E29120 /* racetijden_iosApp.swift */; };
-		0101E4922AA499CF00E29120 /* racetijden_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4812AA499CA00E29120 /* racetijden_iosApp.swift */; };
+		0101E4912AA499CF00E29120 /* RacetijdenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4812AA499CA00E29120 /* RacetijdenApp.swift */; };
+		0101E4922AA499CF00E29120 /* RacetijdenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4812AA499CA00E29120 /* RacetijdenApp.swift */; };
 		0101E4932AA499CF00E29120 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4822AA499CA00E29120 /* HomeView.swift */; };
 		0101E4942AA499CF00E29120 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4822AA499CA00E29120 /* HomeView.swift */; };
 		0101E4952AA499CF00E29120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0101E4832AA499CF00E29120 /* Assets.xcassets */; };
@@ -19,11 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0101E4812AA499CA00E29120 /* racetijden_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racetijden_iosApp.swift; sourceTree = "<group>"; };
+		0101E4812AA499CA00E29120 /* RacetijdenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacetijdenApp.swift; sourceTree = "<group>"; };
 		0101E4822AA499CA00E29120 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0101E4832AA499CF00E29120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0101E4882AA499CF00E29120 /* racetijden-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "racetijden-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0101E48E2AA499CF00E29120 /* racetijden-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "racetijden-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0101E4882AA499CF00E29120 /* Racetijden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racetijden.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0101E48E2AA499CF00E29120 /* Racetijden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racetijden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0101E4902AA499CF00E29120 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		0101E49F2AA4A42C00E29120 /* CircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitView.swift; sourceTree = "<group>"; };
 		019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitItemView.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		0101E4802AA499CA00E29120 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				0101E4812AA499CA00E29120 /* racetijden_iosApp.swift */,
+				0101E4812AA499CA00E29120 /* RacetijdenApp.swift */,
 				019DB7A52AA4AA230059C39A /* views */,
 				019DB7A22AA4A8F80059C39A /* components */,
 				0101E4832AA499CF00E29120 /* Assets.xcassets */,
@@ -70,8 +70,8 @@
 		0101E4892AA499CF00E29120 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0101E4882AA499CF00E29120 /* racetijden-ios.app */,
-				0101E48E2AA499CF00E29120 /* racetijden-ios.app */,
+				0101E4882AA499CF00E29120 /* Racetijden.app */,
+				0101E48E2AA499CF00E29120 /* Racetijden.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,9 +104,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0101E4872AA499CF00E29120 /* racetijden-ios (iOS) */ = {
+		0101E4872AA499CF00E29120 /* Racetijden (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0101E4992AA499CF00E29120 /* Build configuration list for PBXNativeTarget "racetijden-ios (iOS)" */;
+			buildConfigurationList = 0101E4992AA499CF00E29120 /* Build configuration list for PBXNativeTarget "Racetijden (iOS)" */;
 			buildPhases = (
 				0101E4842AA499CF00E29120 /* Sources */,
 				0101E4852AA499CF00E29120 /* Frameworks */,
@@ -116,14 +116,14 @@
 			);
 			dependencies = (
 			);
-			name = "racetijden-ios (iOS)";
+			name = "Racetijden (iOS)";
 			productName = "racetijden-ios (iOS)";
-			productReference = 0101E4882AA499CF00E29120 /* racetijden-ios.app */;
+			productReference = 0101E4882AA499CF00E29120 /* Racetijden.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0101E48D2AA499CF00E29120 /* racetijden-ios (macOS) */ = {
+		0101E48D2AA499CF00E29120 /* Racetijden (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0101E49C2AA499CF00E29120 /* Build configuration list for PBXNativeTarget "racetijden-ios (macOS)" */;
+			buildConfigurationList = 0101E49C2AA499CF00E29120 /* Build configuration list for PBXNativeTarget "Racetijden (macOS)" */;
 			buildPhases = (
 				0101E48A2AA499CF00E29120 /* Sources */,
 				0101E48B2AA499CF00E29120 /* Frameworks */,
@@ -133,9 +133,9 @@
 			);
 			dependencies = (
 			);
-			name = "racetijden-ios (macOS)";
+			name = "Racetijden (macOS)";
 			productName = "racetijden-ios (macOS)";
-			productReference = 0101E48E2AA499CF00E29120 /* racetijden-ios.app */;
+			productReference = 0101E48E2AA499CF00E29120 /* Racetijden.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0101E47F2AA499CA00E29120 /* Build configuration list for PBXProject "racetijden-ios" */;
+			buildConfigurationList = 0101E47F2AA499CA00E29120 /* Build configuration list for PBXProject "Racetijden" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,8 +169,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0101E4872AA499CF00E29120 /* racetijden-ios (iOS) */,
-				0101E48D2AA499CF00E29120 /* racetijden-ios (macOS) */,
+				0101E4872AA499CF00E29120 /* Racetijden (iOS) */,
+				0101E48D2AA499CF00E29120 /* Racetijden (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -202,7 +202,7 @@
 				0101E4A02AA4A42C00E29120 /* CircuitView.swift in Sources */,
 				019DB7A42AA4A90E0059C39A /* CircuitItemView.swift in Sources */,
 				0101E4932AA499CF00E29120 /* HomeView.swift in Sources */,
-				0101E4912AA499CF00E29120 /* racetijden_iosApp.swift in Sources */,
+				0101E4912AA499CF00E29120 /* RacetijdenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +212,7 @@
 			files = (
 				0101E4A12AA4A42C00E29120 /* CircuitView.swift in Sources */,
 				0101E4942AA499CF00E29120 /* HomeView.swift in Sources */,
-				0101E4922AA499CF00E29120 /* racetijden_iosApp.swift in Sources */,
+				0101E4922AA499CF00E29120 /* RacetijdenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +273,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Racetijden;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -325,6 +326,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = Racetijden;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -345,14 +347,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nl.racetijden.racetijden-ios";
-				PRODUCT_NAME = "racetijden-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.racetijden.racetijden;
+				PRODUCT_NAME = Racetijden;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -375,14 +377,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nl.racetijden.racetijden-ios";
-				PRODUCT_NAME = "racetijden-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.racetijden.racetijden;
+				PRODUCT_NAME = Racetijden;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -412,7 +414,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.racetijden.racetijden-ios";
-				PRODUCT_NAME = "racetijden-ios";
+				PRODUCT_NAME = Racetijden;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -440,7 +442,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.racetijden.racetijden-ios";
-				PRODUCT_NAME = "racetijden-ios";
+				PRODUCT_NAME = Racetijden;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -450,7 +452,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0101E47F2AA499CA00E29120 /* Build configuration list for PBXProject "racetijden-ios" */ = {
+		0101E47F2AA499CA00E29120 /* Build configuration list for PBXProject "Racetijden" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0101E4972AA499CF00E29120 /* Debug */,
@@ -459,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0101E4992AA499CF00E29120 /* Build configuration list for PBXNativeTarget "racetijden-ios (iOS)" */ = {
+		0101E4992AA499CF00E29120 /* Build configuration list for PBXNativeTarget "Racetijden (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0101E49A2AA499CF00E29120 /* Debug */,
@@ -468,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0101E49C2AA499CF00E29120 /* Build configuration list for PBXNativeTarget "racetijden-ios (macOS)" */ = {
+		0101E49C2AA499CF00E29120 /* Build configuration list for PBXNativeTarget "Racetijden (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0101E49D2AA499CF00E29120 /* Debug */,
