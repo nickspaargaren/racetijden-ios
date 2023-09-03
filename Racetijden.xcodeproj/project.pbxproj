@@ -16,7 +16,36 @@
 		0101E4A02AA4A42C00E29120 /* CircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E49F2AA4A42C00E29120 /* CircuitView.swift */; };
 		0101E4A12AA4A42C00E29120 /* CircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E49F2AA4A42C00E29120 /* CircuitView.swift */; };
 		019DB7A42AA4A90E0059C39A /* CircuitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */; };
+		01EBEF672AA4F97B00E75039 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EBEF662AA4F97B00E75039 /* WidgetKit.framework */; platformFilter = maccatalyst; };
+		01EBEF692AA4F97B00E75039 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EBEF682AA4F97B00E75039 /* SwiftUI.framework */; platformFilter = maccatalyst; };
+		01EBEF6C2AA4F97B00E75039 /* LatestTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBEF6B2AA4F97B00E75039 /* LatestTime.swift */; };
+		01EBEF6E2AA4F98100E75039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EBEF6D2AA4F98100E75039 /* Assets.xcassets */; };
+		01EBEF722AA4F98100E75039 /* LatestTimeExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 01EBEF642AA4F97B00E75039 /* LatestTimeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01EBEF702AA4F98100E75039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0101E47C2AA499CA00E29120 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01EBEF632AA4F97B00E75039;
+			remoteInfo = LatestTimeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01EBEF732AA4F98100E75039 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				01EBEF722AA4F98100E75039 /* LatestTimeExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0101E4812AA499CA00E29120 /* RacetijdenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacetijdenApp.swift; sourceTree = "<group>"; };
@@ -27,6 +56,12 @@
 		0101E4902AA499CF00E29120 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		0101E49F2AA4A42C00E29120 /* CircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitView.swift; sourceTree = "<group>"; };
 		019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitItemView.swift; sourceTree = "<group>"; };
+		01EBEF642AA4F97B00E75039 /* LatestTimeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LatestTimeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EBEF662AA4F97B00E75039 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		01EBEF682AA4F97B00E75039 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		01EBEF6B2AA4F97B00E75039 /* LatestTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTime.swift; sourceTree = "<group>"; };
+		01EBEF6D2AA4F98100E75039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01EBEF6F2AA4F98100E75039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +79,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01EBEF612AA4F97B00E75039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EBEF692AA4F97B00E75039 /* SwiftUI.framework in Frameworks */,
+				01EBEF672AA4F97B00E75039 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +96,8 @@
 			children = (
 				0101E4802AA499CA00E29120 /* Shared */,
 				0101E48F2AA499CF00E29120 /* macOS */,
+				01EBEF6A2AA4F97B00E75039 /* LatestTime */,
+				01EBEF652AA4F97B00E75039 /* Frameworks */,
 				0101E4892AA499CF00E29120 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +118,7 @@
 			children = (
 				0101E4882AA499CF00E29120 /* Racetijden.app */,
 				0101E48E2AA499CF00E29120 /* Racetijden.app */,
+				01EBEF642AA4F97B00E75039 /* LatestTimeExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +148,25 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		01EBEF652AA4F97B00E75039 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01EBEF662AA4F97B00E75039 /* WidgetKit.framework */,
+				01EBEF682AA4F97B00E75039 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01EBEF6A2AA4F97B00E75039 /* LatestTime */ = {
+			isa = PBXGroup;
+			children = (
+				01EBEF6B2AA4F97B00E75039 /* LatestTime.swift */,
+				01EBEF6D2AA4F98100E75039 /* Assets.xcassets */,
+				01EBEF6F2AA4F98100E75039 /* Info.plist */,
+			);
+			path = LatestTime;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,10 +177,12 @@
 				0101E4842AA499CF00E29120 /* Sources */,
 				0101E4852AA499CF00E29120 /* Frameworks */,
 				0101E4862AA499CF00E29120 /* Resources */,
+				01EBEF732AA4F98100E75039 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				01EBEF712AA4F98100E75039 /* PBXTargetDependency */,
 			);
 			name = "Racetijden (iOS)";
 			productName = "racetijden-ios (iOS)";
@@ -138,6 +206,23 @@
 			productReference = 0101E48E2AA499CF00E29120 /* Racetijden.app */;
 			productType = "com.apple.product-type.application";
 		};
+		01EBEF632AA4F97B00E75039 /* LatestTimeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EBEF762AA4F98100E75039 /* Build configuration list for PBXNativeTarget "LatestTimeExtension" */;
+			buildPhases = (
+				01EBEF602AA4F97B00E75039 /* Sources */,
+				01EBEF612AA4F97B00E75039 /* Frameworks */,
+				01EBEF622AA4F97B00E75039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LatestTimeExtension;
+			productName = LatestTimeExtension;
+			productReference = 01EBEF642AA4F97B00E75039 /* LatestTimeExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +237,9 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					0101E48D2AA499CF00E29120 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					01EBEF632AA4F97B00E75039 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -171,6 +259,7 @@
 			targets = (
 				0101E4872AA499CF00E29120 /* Racetijden (iOS) */,
 				0101E48D2AA499CF00E29120 /* Racetijden (macOS) */,
+				01EBEF632AA4F97B00E75039 /* LatestTimeExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -189,6 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0101E4962AA499CF00E29120 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EBEF622AA4F97B00E75039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EBEF6E2AA4F98100E75039 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +313,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01EBEF602AA4F97B00E75039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EBEF6C2AA4F97B00E75039 /* LatestTime.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01EBEF712AA4F98100E75039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01EBEF632AA4F97B00E75039 /* LatestTimeExtension */;
+			targetProxy = 01EBEF702AA4F98100E75039 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0101E4972AA499CF00E29120 /* Debug */ = {
@@ -335,6 +448,7 @@
 		0101E49A2AA499CF00E29120 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +479,7 @@
 		0101E49B2AA499CF00E29120 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +564,65 @@
 			};
 			name = Release;
 		};
+		01EBEF742AA4F98100E75039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ6333E53V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LatestTime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LatestTime;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.racetijden.racetijden.LatestTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01EBEF752AA4F98100E75039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ6333E53V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LatestTime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LatestTime;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.racetijden.racetijden.LatestTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -475,6 +649,15 @@
 			buildConfigurations = (
 				0101E49D2AA499CF00E29120 /* Debug */,
 				0101E49E2AA499CF00E29120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EBEF762AA4F98100E75039 /* Build configuration list for PBXNativeTarget "LatestTimeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EBEF742AA4F98100E75039 /* Debug */,
+				01EBEF752AA4F98100E75039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
