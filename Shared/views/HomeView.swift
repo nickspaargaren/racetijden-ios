@@ -1,27 +1,64 @@
-//
-//  ContentView.swift
-//  Shared
-//
-//  Created by Nick Spaargaren on 03/09/2023.
-//
-
 import SwiftUI
 
 struct HomeView: View {
+    @State private var circuits: [Circuit] = []
+    
     var body: some View {
         NavigationView {
-            List {
-                CircuitItemView(flag: "ita", name: "Italian GP", description: "Monza", winner: "CSI-SNIPER")
-                
-                CircuitItemView(flag: "mco", name: "Monaco GP", description: "Monte Carlo", winner: "CSI-SNIPER")
-                
-                CircuitItemView(flag: "bra", name: "Brazilian GP", description: "Interlagos, São Paulo", winner: "nickspaargaren25")
-                
-                CircuitItemView(flag: "nld", name: "Dutch GP", description: "Circuit Zandvoort", winner: "CSI-SNIPER")
+            List(circuits) { circuit in
+                CircuitItemView(flag: circuit.flag, name: circuit.name, description: circuit.description, winner: !circuit.times.isEmpty ? circuit.times[0].gamertag : "")
                 
             }.navigationTitle("Circuits")
+                .onAppear(perform: fetchCircuits)
         }
     }
+    
+    func fetchCircuits() {
+        guard let url = URL(string: "https://f1.racetijden.nl/api/circuits") else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                return
+            }
+            
+            if let data = data {
+                do {
+                    let decoder = JSONDecoder()
+                    let response = try decoder.decode(APIResponse.self, from: data)
+                    DispatchQueue.main.async {
+                        self.circuits = response.data.circuits
+                    }
+                } catch {
+                    print("Error decoding JSON: \(error.localizedDescription)")
+                }
+            }
+        }.resume()
+    }
+}
+
+struct APIResponse: Codable {
+    let success: Bool
+    let data: APIData
+}
+
+struct APIData: Codable {
+    let circuits: [Circuit]
+}
+
+struct Circuit: Identifiable, Codable {
+    let id = UUID()
+    let name: String
+    let description: String
+    let flag: String
+    let times: [Time]
+}
+
+struct Time: Codable {
+    let time: String
+    let gamertag: String
 }
 
 struct HomeView_Previews: PreviewProvider {
