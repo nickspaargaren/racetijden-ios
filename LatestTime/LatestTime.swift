@@ -40,6 +40,7 @@ struct Time: Decodable {
 
 struct Circuit: Decodable {
     var name: String
+    var flag: String
 }
 
 struct Provider: TimelineProvider {
@@ -89,7 +90,7 @@ struct TextWidgetView: View {
             
             VStack(spacing: 10) {
                 HStack(spacing: 10) {
-                    Image(systemName: "sun.max.circle.fill").resizable().aspectRatio(contentMode: .fill).frame(width: 30, height: 30).clipShape(Circle()).shadow(radius: 1)
+                    Image(entry.widgetData.data.times.first?.circuit.flag ?? "ita").resizable().aspectRatio(contentMode: .fill).frame(width: 30, height: 30).clipShape(Circle()).shadow(radius: 1)
                     
                     VStack(alignment: .leading) {
                         Text(entry.widgetData.data.times.first?.circuit.name ?? "Italian GP").font(.system(size: 14)).fontWeight(.semibold).lineLimit(1)
