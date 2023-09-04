@@ -90,10 +90,10 @@ struct TextWidgetView: View {
             
             VStack(spacing: 10) {
                 HStack(spacing: 10) {
-                    Image(entry.widgetData.data.times.first?.circuit.flag ?? "ita").resizable().aspectRatio(contentMode: .fill).frame(width: 30, height: 30).clipShape(Circle()).shadow(radius: 1)
+                    Image(entry.widgetData.data.times.first?.circuit.flag ?? "mco").resizable().aspectRatio(contentMode: .fill).frame(width: 30, height: 30).clipShape(Circle()).shadow(radius: 1)
                     
                     VStack(alignment: .leading) {
-                        Text(entry.widgetData.data.times.first?.circuit.name ?? "Italian GP").font(.system(size: 14)).fontWeight(.semibold).lineLimit(1)
+                        Text(entry.widgetData.data.times.first?.circuit.name ?? "Monaco GP").font(.system(size: 14)).fontWeight(.semibold).lineLimit(1)
                         Text(entry.widgetData.data.times.first?.updatedAt ?? "1 dag geleden..").font(.system(size: 12)).foregroundColor(.gray).lineLimit(1)
                     }
                 }.padding(.vertical, 10)
@@ -102,7 +102,7 @@ struct TextWidgetView: View {
                     Text(entry.widgetData.data.times.first?.gamertag ?? "CSI-SNIPER").font(.subheadline).fontWeight(.semibold).lineLimit(1)
                     HStack {
                         Image(systemName: "clock.fill").resizable().scaledToFit().frame(height: 12)
-                        Text(entry.widgetData.data.times.first?.time ?? "01:21.323").font(.system(size: 14))
+                        Text(entry.widgetData.data.times.first?.time ?? "01:12.776").font(.system(size: 14))
                     }
                 }.padding(.vertical, 10)
                 
