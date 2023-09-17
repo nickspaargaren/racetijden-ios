@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
-        
+    
     @ObservedObject var api = Api()
     
     var body: some View {
@@ -9,7 +9,11 @@ struct HomeView: View {
             List(api.circuits) { circuit in
                 CircuitItemView(flag: circuit.flag, name: circuit.name, description: circuit.description, winner: !circuit.times.isEmpty ? circuit.times[0].gamertag : "")
             }.navigationTitle("Circuits")
-                .onAppear(perform: api.fetchCircuits)
+                .onAppear {
+                    Task {
+                        await api.fetchCircuits()
+                    }
+                }
         }
     }
 }

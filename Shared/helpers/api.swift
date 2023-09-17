@@ -2,31 +2,23 @@ import Foundation
 
 class Api: ObservableObject {
     let baseURL = "https://f1.racetijden.nl/api"
-
+    
     @Published var circuits: [Circuit] = []
-
-    func fetchCircuits() {
+    
+    func fetchCircuits() async {
         guard let url = URL(string: baseURL + "/circuits") else {
             return
         }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let error = error {
-                print("Error: \(error.localizedDescription)")
-                return
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let decoder = JSONDecoder()
+            let response = try decoder.decode(APIResponse.self, from: data)
+            DispatchQueue.main.async {
+                self.circuits = response.data.circuits
             }
-            
-            if let data = data {
-                do {
-                    let decoder = JSONDecoder()
-                    let response = try decoder.decode(APIResponse.self, from: data)
-                    DispatchQueue.main.async {
-                        self.circuits = response.data.circuits
-                    }
-                } catch {
-                    print("Error decoding JSON: \(error.localizedDescription)")
-                }
-            }
-        }.resume()
+        } catch {
+            print("Error decoding JSON: \(error.localizedDescription)")
+        }
     }
 }
