@@ -86,8 +86,6 @@ struct TextWidgetView: View {
 
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.white, .gray.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing)
-            
             VStack(spacing: 10) {
                 HStack(spacing: 10) {
                     Image(entry.widgetData.data.times.first?.circuit.flag ?? "mco").resizable().aspectRatio(contentMode: .fill).frame(width: 30, height: 30).clipShape(Circle()).shadow(radius: 1)
@@ -105,8 +103,10 @@ struct TextWidgetView: View {
                         Text(entry.widgetData.data.times.first?.time ?? "01:12.776").font(.system(size: 14))
                     }
                 }.padding(.vertical, 10)
-                
-            }.padding()
+            }
+        }.containerBackground(for: .widget) { 
+            LinearGradient(gradient: Gradient(colors: [.white, .gray.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            
         }
     }
 }
