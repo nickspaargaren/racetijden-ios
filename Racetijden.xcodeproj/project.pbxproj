@@ -8,20 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0101E4912AA499CF00E29120 /* RacetijdenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4812AA499CA00E29120 /* RacetijdenApp.swift */; };
-		0101E4922AA499CF00E29120 /* RacetijdenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4812AA499CA00E29120 /* RacetijdenApp.swift */; };
 		0101E4932AA499CF00E29120 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4822AA499CA00E29120 /* HomeView.swift */; };
-		0101E4942AA499CF00E29120 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4822AA499CA00E29120 /* HomeView.swift */; };
 		0101E4952AA499CF00E29120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0101E4832AA499CF00E29120 /* Assets.xcassets */; };
-		0101E4962AA499CF00E29120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0101E4832AA499CF00E29120 /* Assets.xcassets */; };
 		0101E4A02AA4A42C00E29120 /* CircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E49F2AA4A42C00E29120 /* CircuitView.swift */; };
-		0101E4A12AA4A42C00E29120 /* CircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E49F2AA4A42C00E29120 /* CircuitView.swift */; };
+		014176F02BA4CF8B0079F3ED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014176EF2BA4CF8B0079F3ED /* SettingsView.swift */; };
+		014176F22BA4D0990079F3ED /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014176F12BA4D0990079F3ED /* settings.swift */; };
 		019DB7A42AA4A90E0059C39A /* CircuitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */; };
 		01B5C2722AA524D400FD4EBA /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5C2712AA524D400FD4EBA /* api.swift */; };
 		01B5C2742AA52DBC00FD4EBA /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5C2732AA52DBC00FD4EBA /* models.swift */; };
 		01EBEF672AA4F97B00E75039 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EBEF662AA4F97B00E75039 /* WidgetKit.framework */; platformFilter = maccatalyst; };
 		01EBEF692AA4F97B00E75039 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EBEF682AA4F97B00E75039 /* SwiftUI.framework */; platformFilter = maccatalyst; };
 		01EBEF6C2AA4F97B00E75039 /* LatestTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBEF6B2AA4F97B00E75039 /* LatestTime.swift */; };
-		01EBEF6E2AA4F98100E75039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EBEF6D2AA4F98100E75039 /* Assets.xcassets */; };
 		01EBEF722AA4F98100E75039 /* LatestTimeExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 01EBEF642AA4F97B00E75039 /* LatestTimeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -54,9 +51,9 @@
 		0101E4822AA499CA00E29120 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0101E4832AA499CF00E29120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0101E4882AA499CF00E29120 /* Racetijden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racetijden.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0101E48E2AA499CF00E29120 /* Racetijden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racetijden.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0101E4902AA499CF00E29120 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		0101E49F2AA4A42C00E29120 /* CircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitView.swift; sourceTree = "<group>"; };
+		014176EF2BA4CF8B0079F3ED /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		014176F12BA4D0990079F3ED /* settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
 		019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitItemView.swift; sourceTree = "<group>"; };
 		01B5C2712AA524D400FD4EBA /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
 		01B5C2732AA52DBC00FD4EBA /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
@@ -64,19 +61,10 @@
 		01EBEF662AA4F97B00E75039 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		01EBEF682AA4F97B00E75039 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		01EBEF6B2AA4F97B00E75039 /* LatestTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTime.swift; sourceTree = "<group>"; };
-		01EBEF6D2AA4F98100E75039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		01EBEF6F2AA4F98100E75039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0101E4852AA499CF00E29120 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0101E48B2AA499CF00E29120 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				0101E4802AA499CA00E29120 /* Shared */,
-				0101E48F2AA499CF00E29120 /* macOS */,
 				01EBEF6A2AA4F97B00E75039 /* LatestTime */,
 				01EBEF652AA4F97B00E75039 /* Frameworks */,
 				0101E4892AA499CF00E29120 /* Products */,
@@ -122,18 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				0101E4882AA499CF00E29120 /* Racetijden.app */,
-				0101E48E2AA499CF00E29120 /* Racetijden.app */,
 				01EBEF642AA4F97B00E75039 /* LatestTimeExtension.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		0101E48F2AA499CF00E29120 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				0101E4902AA499CF00E29120 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		019DB7A22AA4A8F80059C39A /* components */ = {
@@ -149,6 +127,7 @@
 			children = (
 				0101E4822AA499CA00E29120 /* HomeView.swift */,
 				0101E49F2AA4A42C00E29120 /* CircuitView.swift */,
+				014176EF2BA4CF8B0079F3ED /* SettingsView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -158,6 +137,7 @@
 			children = (
 				01B5C2712AA524D400FD4EBA /* api.swift */,
 				01B5C2732AA52DBC00FD4EBA /* models.swift */,
+				014176F12BA4D0990079F3ED /* settings.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -175,8 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				01EBEF6B2AA4F97B00E75039 /* LatestTime.swift */,
-				01EBEF6D2AA4F98100E75039 /* Assets.xcassets */,
-				01EBEF6F2AA4F98100E75039 /* Info.plist */,
 			);
 			path = LatestTime;
 			sourceTree = "<group>";
@@ -201,23 +179,6 @@
 			name = "Racetijden (iOS)";
 			productName = "racetijden-ios (iOS)";
 			productReference = 0101E4882AA499CF00E29120 /* Racetijden.app */;
-			productType = "com.apple.product-type.application";
-		};
-		0101E48D2AA499CF00E29120 /* Racetijden (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0101E49C2AA499CF00E29120 /* Build configuration list for PBXNativeTarget "Racetijden (macOS)" */;
-			buildPhases = (
-				0101E48A2AA499CF00E29120 /* Sources */,
-				0101E48B2AA499CF00E29120 /* Frameworks */,
-				0101E48C2AA499CF00E29120 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Racetijden (macOS)";
-			productName = "racetijden-ios (macOS)";
-			productReference = 0101E48E2AA499CF00E29120 /* Racetijden.app */;
 			productType = "com.apple.product-type.application";
 		};
 		01EBEF632AA4F97B00E75039 /* LatestTimeExtension */ = {
@@ -250,9 +211,6 @@
 					0101E4872AA499CF00E29120 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					0101E48D2AA499CF00E29120 = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
 					01EBEF632AA4F97B00E75039 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -272,7 +230,6 @@
 			projectRoot = "";
 			targets = (
 				0101E4872AA499CF00E29120 /* Racetijden (iOS) */,
-				0101E48D2AA499CF00E29120 /* Racetijden (macOS) */,
 				01EBEF632AA4F97B00E75039 /* LatestTimeExtension */,
 			);
 		};
@@ -287,19 +244,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0101E48C2AA499CF00E29120 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0101E4962AA499CF00E29120 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		01EBEF622AA4F97B00E75039 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01EBEF6E2AA4F98100E75039 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,22 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014176F02BA4CF8B0079F3ED /* SettingsView.swift in Sources */,
 				01B5C2722AA524D400FD4EBA /* api.swift in Sources */,
+				014176F22BA4D0990079F3ED /* settings.swift in Sources */,
 				01B5C2742AA52DBC00FD4EBA /* models.swift in Sources */,
 				0101E4A02AA4A42C00E29120 /* CircuitView.swift in Sources */,
 				019DB7A42AA4A90E0059C39A /* CircuitItemView.swift in Sources */,
 				0101E4932AA499CF00E29120 /* HomeView.swift in Sources */,
 				0101E4912AA499CF00E29120 /* RacetijdenApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0101E48A2AA499CF00E29120 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0101E4A12AA4A42C00E29120 /* CircuitView.swift in Sources */,
-				0101E4942AA499CF00E29120 /* HomeView.swift in Sources */,
-				0101E4922AA499CF00E29120 /* RacetijdenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,64 +470,6 @@
 			};
 			name = Release;
 		};
-		0101E49D2AA499CF00E29120 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = TZ6333E53V;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.7;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nl.racetijden.racetijden-ios";
-				PRODUCT_NAME = Racetijden;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		0101E49E2AA499CF00E29120 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = TZ6333E53V;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.7;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nl.racetijden.racetijden-ios";
-				PRODUCT_NAME = Racetijden;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		01EBEF742AA4F98100E75039 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -611,6 +493,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -640,6 +525,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -664,15 +552,6 @@
 			buildConfigurations = (
 				0101E49A2AA499CF00E29120 /* Debug */,
 				0101E49B2AA499CF00E29120 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0101E49C2AA499CF00E29120 /* Build configuration list for PBXNativeTarget "Racetijden (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0101E49D2AA499CF00E29120 /* Debug */,
-				0101E49E2AA499CF00E29120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -4,7 +4,16 @@ import SwiftUI
 struct RacetijdenApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+                SettingsView()
+                    .tabItem {
+                        Label("Settings", systemImage: "gear")
+                    }
+            }
         }
     }
 }

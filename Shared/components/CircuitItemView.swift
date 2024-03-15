@@ -8,6 +8,8 @@ import SwiftUI
 
 struct CircuitItemView: View {
     
+    @ObservedObject var settings = UserSettings()
+    
     var flag: String
     var name: String
     var description: String
@@ -22,7 +24,9 @@ struct CircuitItemView: View {
                     Text(description).font(.system(size: 14)).foregroundColor(.gray).lineLimit(1)
                 }.padding([.leading, .trailing], 2)
                 Spacer()
-                Text(winner).font(.subheadline)
+                if settings.showWinners {
+                    Text(winner).font(.subheadline)
+                }
                 
             }
         })
