@@ -17,7 +17,8 @@ struct Circuit: Identifiable, Codable {
     let times: [Time]
 }
 
-struct Time: Codable {
+struct Time: Identifiable, Codable {
+    let id = UUID()
     let time: String
     let gamertag: String
 }
