@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 struct CircuitView: View {
     
     var flag: String
@@ -10,19 +9,21 @@ struct CircuitView: View {
     
     @ObservedObject var api = Api()
     @State private var isLoading = true
-
+    @State private var newTimeText = ""
+    
     var body: some View {
-        NavigationView {
-            Group {
-                if isLoading {
-                    ProgressView("Loading...")
-                        .progressViewStyle(CircularProgressViewStyle())
-                        .onAppear {
-                            fetchCircuitDetails()
-                        }
-                } else {
-                    if let firstCircuit = api.circuits.first {
-                        VStack {
+        List {
+            if isLoading {
+                ProgressView("Loading...")
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .onAppear {
+                        fetchCircuitDetails()
+                    }
+            } else {
+                if let firstCircuit = api.circuits.first {
+                    HStack{
+                        Spacer()
+                        VStack(alignment: .center) {
                             Image(firstCircuit.flag)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
@@ -30,32 +31,28 @@ struct CircuitView: View {
                                 .shadow(radius: 1)
                             Text(firstCircuit.name)
                                 .font(.title)
-                            Text(firstCircuit.description).padding(.bottom)
-                            if !firstCircuit.times.isEmpty {
-                                ForEach(firstCircuit.times) { time in
-                                    GroupBox {
-                                        HStack{
-                                            Text(time.gamertag)
-                                            Spacer()
-                                            Text(time.time).font(.system(.body, design: .monospaced))
-
-                                        }
-                                    }
-                                   
-                                }
-                                
-                            } else {
-                                GroupBox {
-                                    Text("No times set")
+                            Text(firstCircuit.description)
+                        }
+                        Spacer()
+                    }.listRowBackground(Color.clear)
+                    Section {
+                        if !firstCircuit.times.isEmpty {
+                            ForEach(firstCircuit.times) { time in
+                                HStack{
+                                    Text(time.gamertag)
+                                    Spacer()
+                                    Text(time.time).font(.system(.body, design: .monospaced))
                                 }
                             }
-                            Spacer()
+                        } else {
+                            Text("No times")
+
                         }
-                    } else {
-                        Text("No circuit details available")
                     }
+                } else {
+                    Text("No circuit details available")
                 }
-            }.padding(20)
+            }
         }
     }
     
@@ -72,4 +69,3 @@ struct CircuitView_Previews: PreviewProvider {
         CircuitView(flag: "nld", name: "Dutch GP", description: "Circuit Zandvoort", winner: "CSI-SNIPER")
     }
 }
-
