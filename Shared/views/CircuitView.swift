@@ -12,7 +12,7 @@ struct CircuitView: View {
     @State private var newTimeText = ""
     
     var body: some View {
-        List {
+        Group {
             if isLoading {
                 ProgressView("Loading...")
                     .progressViewStyle(CircularProgressViewStyle())
@@ -20,37 +20,39 @@ struct CircuitView: View {
                         fetchCircuitDetails()
                     }
             } else {
-                if let firstCircuit = api.circuits.first {
-                    HStack{
-                        Spacer()
-                        VStack(alignment: .center) {
-                            Image(firstCircuit.flag)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 70)
-                                .shadow(radius: 1)
-                            Text(firstCircuit.name)
-                                .font(.title)
-                            Text(firstCircuit.description)
-                        }
-                        Spacer()
-                    }.listRowBackground(Color.clear)
-                    Section {
-                        if !firstCircuit.times.isEmpty {
-                            ForEach(firstCircuit.times) { time in
-                                HStack{
-                                    Text(time.gamertag)
-                                    Spacer()
-                                    Text(time.time).font(.system(.body, design: .monospaced))
-                                }
+                List {
+                    if let firstCircuit = api.circuits.first {
+                        HStack{
+                            Spacer()
+                            VStack(alignment: .center) {
+                                Image(firstCircuit.flag)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 70)
+                                    .shadow(radius: 1)
+                                Text(firstCircuit.name)
+                                    .font(.title)
+                                Text(firstCircuit.description)
                             }
-                        } else {
-                            Text("No times")
-
+                            Spacer()
+                        }.listRowBackground(Color.clear)
+                        Section {
+                            if !firstCircuit.times.isEmpty {
+                                ForEach(firstCircuit.times) { time in
+                                    HStack{
+                                        Text(time.gamertag)
+                                        Spacer()
+                                        Text(time.time).font(.system(.body, design: .monospaced))
+                                    }
+                                }
+                            } else {
+                                Text("No times")
+                                
+                            }
                         }
+                    } else {
+                        Text("No circuit details available")
                     }
-                } else {
-                    Text("No circuit details available")
                 }
             }
         }
