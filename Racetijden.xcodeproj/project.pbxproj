@@ -11,6 +11,7 @@
 		0101E4932AA499CF00E29120 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E4822AA499CA00E29120 /* HomeView.swift */; };
 		0101E4952AA499CF00E29120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0101E4832AA499CF00E29120 /* Assets.xcassets */; };
 		0101E4A02AA4A42C00E29120 /* CircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101E49F2AA4A42C00E29120 /* CircuitView.swift */; };
+		013360352BAE198F006FC9B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013360342BAE198F006FC9B4 /* Assets.xcassets */; };
 		014176F02BA4CF8B0079F3ED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014176EF2BA4CF8B0079F3ED /* SettingsView.swift */; };
 		014176F22BA4D0990079F3ED /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014176F12BA4D0990079F3ED /* settings.swift */; };
 		019DB7A42AA4A90E0059C39A /* CircuitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */; };
@@ -52,6 +53,7 @@
 		0101E4832AA499CF00E29120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0101E4882AA499CF00E29120 /* Racetijden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racetijden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0101E49F2AA4A42C00E29120 /* CircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitView.swift; sourceTree = "<group>"; };
+		013360342BAE198F006FC9B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		014176EF2BA4CF8B0079F3ED /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		014176F12BA4D0990079F3ED /* settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
 		019DB7A32AA4A90E0059C39A /* CircuitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitItemView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				01EBEF6B2AA4F97B00E75039 /* LatestTime.swift */,
+				013360342BAE198F006FC9B4 /* Assets.xcassets */,
 			);
 			path = LatestTime;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013360352BAE198F006FC9B4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
