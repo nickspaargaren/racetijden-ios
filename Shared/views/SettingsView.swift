@@ -13,10 +13,10 @@ struct SettingsView: View {
                         if !userSettings.gamertag.isEmpty {
                             Button(action: {
                                 userSettings.gamertag = ""
-                            }) {
+                            }, label: {
                                 Image(systemName: "xmark.circle.fill")
                                     .foregroundColor(.secondary)
-                            }
+                            })
                         }
                     }
                 }
