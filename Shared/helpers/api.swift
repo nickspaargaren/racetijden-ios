@@ -2,14 +2,14 @@ import Foundation
 
 class Api: ObservableObject {
     let baseURL = "https://f1.racetijden.nl/api"
-    
+
     @Published var circuits: [Circuit] = []
 
     func fetchCircuits() async {
         guard let url = URL(string: "\(baseURL)/circuits") else {
             return
         }
-        
+
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             let decoder = JSONDecoder()
@@ -27,7 +27,7 @@ class Api: ObservableObject {
             return
         }
         print(url)
-        
+
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             let decoder = JSONDecoder()

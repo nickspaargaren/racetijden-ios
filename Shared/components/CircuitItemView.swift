@@ -7,14 +7,14 @@
 import SwiftUI
 
 struct CircuitItemView: View {
-    
+
     @ObservedObject var settings = UserSettings()
-    
+
     var flag: String
     var name: String
     var description: String
     var winner: String
-    
+
     var body: some View {
         NavigationLink(destination: CircuitView(flag: flag, name: name, description: description, winner: winner), label: {
             HStack {
@@ -27,7 +27,7 @@ struct CircuitItemView: View {
                 if settings.showWinners {
                     Text(winner).font(.subheadline)
                 }
-                
+
             }
         })
     }

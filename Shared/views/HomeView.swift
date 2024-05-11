@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct HomeView: View {
-    
+
     @ObservedObject var api = Api()
     @State private var searchQuery = ""
     @State private var isLoading = false
-    
+
     var body: some View {
         NavigationView {
             Group {

@@ -49,18 +49,18 @@ struct Provider: TimelineProvider {
         return Model(date: Date(), widgetData: placeholderData)
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (Model) -> ()) {
+    func getSnapshot(in context: Context, completion: @escaping (Model) -> Void) {
         let snapshotData = LatestTimeModel(success: true, data: Times(times: []))
         let entry = Model(date: Date(), widgetData: snapshotData)
         completion(entry)
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Model>) -> ()) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<Model>) -> Void) {
         guard let url = URL(string: "https://f1.racetijden.nl/api/times/latest") else {
             return
         }
 
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        URLSession.shared.dataTask(with: url) { data, _, error in
             var entries: [Model] = []
 
             if let data = data {
@@ -89,7 +89,7 @@ struct TextWidgetView: View {
             VStack(spacing: 10) {
                 HStack(spacing: 10) {
                     Image(entry.widgetData.data.times.first?.circuit.flag ?? "mco").resizable().aspectRatio(contentMode: .fill).frame(width: 30, height: 30).clipShape(Circle()).shadow(radius: 1)
-                    
+
                     VStack(alignment: .leading) {
                         Text(entry.widgetData.data.times.first?.circuit.name ?? "Monaco GP").font(.system(size: 14)).fontWeight(.semibold).lineLimit(1)
                         Text(entry.widgetData.data.times.first?.updatedAt ?? "1 dag geleden..").font(.system(size: 12)).foregroundColor(.gray).lineLimit(1)
@@ -104,13 +104,12 @@ struct TextWidgetView: View {
                     }
                 }.padding(.vertical, 10)
             }
-        }.containerBackground(for: .widget) { 
+        }.containerBackground(for: .widget) {
             LinearGradient(gradient: Gradient(colors: [.white, .gray.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing)
-            
+
         }
     }
 }
-
 
 struct TextWidget_Previews: PreviewProvider {
     static var previews: some View {

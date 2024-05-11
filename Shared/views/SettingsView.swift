@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct SettingsView: View {
-    
+
     @ObservedObject var userSettings = UserSettings()
-    
+
     var body: some View {
         NavigationView {
             Form {
@@ -13,17 +13,17 @@ struct SettingsView: View {
                         if !userSettings.gamertag.isEmpty {
                             Button(action: {
                                 userSettings.gamertag = ""
-                            }) {
+                            }, label: {
                                 Image(systemName: "xmark.circle.fill")
                                     .foregroundColor(.secondary)
-                            }
+                            })
                         }
                     }
                 }
                 Section(header: Text("App settings")) {
                     Toggle("Show winners", isOn: $userSettings.showWinners)
                 }
-                
+
             }
             .navigationTitle("Settings")
         }

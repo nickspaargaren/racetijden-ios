@@ -6,7 +6,7 @@ class UserSettings: ObservableObject {
             UserDefaults.standard.set(showWinners, forKey: "showWinners")
         }
     }
-    
+
     @Published var gamertag: String {
         didSet {
             UserDefaults.standard.set(gamertag, forKey: "gamertag")
