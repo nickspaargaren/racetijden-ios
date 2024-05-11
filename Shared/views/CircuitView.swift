@@ -10,6 +10,7 @@ struct CircuitView: View {
     @ObservedObject var api = Api()
     @State private var isLoading = true
     @State private var newTimeText = ""
+    @State private var showAlert = false
 
     var body: some View {
         Group {
@@ -47,14 +48,24 @@ struct CircuitView: View {
                                 }
                             } else {
                                 Text("No times")
-
                             }
                         }
+                        Section(header: Text("New time")) {
+                        TextField("00:00.000", text: $newTimeText).font(.system(.body, design: .monospaced))
+                        Button(action: {
+                            setNewTime()
+                        }) {
+                            Text("Set Time")
+                        }
+                    }
                     } else {
                         Text("No circuit details available")
                     }
                 }
             }
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Success"), message: Text("New time set successfully"), dismissButton: .default(Text("OK")))
         }
     }
 
@@ -63,6 +74,10 @@ struct CircuitView: View {
             await api.fetchCircuitDetails(circuitName: name)
             isLoading = false
         }
+    }
+
+    private func setNewTime() {
+        showAlert = true
     }
 }
 
