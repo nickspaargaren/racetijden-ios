@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct SettingsView: View {
-    
+
     @ObservedObject var userSettings = UserSettings()
-    
+
     var body: some View {
         NavigationView {
             Form {
@@ -23,7 +23,7 @@ struct SettingsView: View {
                 Section(header: Text("App settings")) {
                     Toggle("Show winners", isOn: $userSettings.showWinners)
                 }
-                
+
             }
             .navigationTitle("Settings")
         }

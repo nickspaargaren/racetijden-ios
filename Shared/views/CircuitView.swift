@@ -1,16 +1,16 @@
 import SwiftUI
 
 struct CircuitView: View {
-    
+
     var flag: String
     var name: String
     var description: String
     var winner: String
-    
+
     @ObservedObject var api = Api()
     @State private var isLoading = true
     @State private var newTimeText = ""
-    
+
     var body: some View {
         Group {
             if isLoading {
@@ -22,7 +22,7 @@ struct CircuitView: View {
             } else {
                 List {
                     if let firstCircuit = api.circuits.first {
-                        HStack{
+                        HStack {
                             Spacer()
                             VStack(alignment: .center) {
                                 Image(firstCircuit.flag)
@@ -39,7 +39,7 @@ struct CircuitView: View {
                         Section {
                             if !firstCircuit.times.isEmpty {
                                 ForEach(firstCircuit.times) { time in
-                                    HStack{
+                                    HStack {
                                         Text(time.gamertag)
                                         Spacer()
                                         Text(time.time).font(.system(.body, design: .monospaced))
@@ -47,7 +47,7 @@ struct CircuitView: View {
                                 }
                             } else {
                                 Text("No times")
-                                
+
                             }
                         }
                     } else {
@@ -57,7 +57,7 @@ struct CircuitView: View {
             }
         }
     }
-    
+
     private func fetchCircuitDetails() {
         Task {
             await api.fetchCircuitDetails(circuitName: name)
