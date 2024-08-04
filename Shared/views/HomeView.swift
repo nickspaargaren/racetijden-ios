@@ -25,7 +25,7 @@ struct HomeView: View {
                             $0.name.localizedCaseInsensitiveContains(searchQuery) ||
                             $0.description.localizedCaseInsensitiveContains(searchQuery)
                         }, id: \.id) { circuit in
-                            CircuitItemView(flag: circuit.flag, name: circuit.name, description: circuit.description, winner: !circuit.times.isEmpty ? circuit.times[0].gamertag : "")
+                            CircuitItemView(flag: circuit.flag, name: circuit.name, slug: circuit.slug, description: circuit.description, winner: !circuit.times.isEmpty ? circuit.times[0].gamertag : "")
                         }
                     }
                 }

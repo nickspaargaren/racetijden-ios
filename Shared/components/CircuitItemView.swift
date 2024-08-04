@@ -12,11 +12,12 @@ struct CircuitItemView: View {
 
     var flag: String
     var name: String
+    var slug: String
     var description: String
     var winner: String
 
     var body: some View {
-        NavigationLink(destination: CircuitView(flag: flag, name: name, description: description, winner: winner), label: {
+        NavigationLink(destination: CircuitView(flag: flag, name: name, slug: slug, description: description, winner: winner), label: {
             HStack {
                 Image(flag).resizable().aspectRatio(contentMode: .fit).frame(width: 30).shadow(radius: 1)
                 VStack(alignment: .leading) {
@@ -35,6 +36,6 @@ struct CircuitItemView: View {
 
 struct CircuitItemView_Previews: PreviewProvider {
     static var previews: some View {
-        CircuitItemView(flag: "nld", name: "Dutch GP", description: "Circuit Zandvoort", winner: "CSI-SNIPER")
+        CircuitItemView(flag: "nld", name: "Dutch GP", slug: "dutch-gp", description: "Circuit Zandvoort", winner: "CSI-SNIPER")
     }
 }

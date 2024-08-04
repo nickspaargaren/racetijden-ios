@@ -12,6 +12,7 @@ struct APIData: Codable {
 struct Circuit: Identifiable, Codable {
     let id = UUID()
     let name: String
+    let slug: String
     let description: String
     let flag: String
     let times: [Time]

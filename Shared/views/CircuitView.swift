@@ -4,6 +4,7 @@ struct CircuitView: View {
 
     var flag: String
     var name: String
+    var slug: String
     var description: String
     var winner: String
 
@@ -60,7 +61,7 @@ struct CircuitView: View {
 
     private func fetchCircuitDetails() {
         Task {
-            await api.fetchCircuitDetails(circuitName: name)
+            await api.fetchCircuitDetails(circuitSlug: slug)
             isLoading = false
         }
     }
@@ -68,6 +69,6 @@ struct CircuitView: View {
 
 struct CircuitView_Previews: PreviewProvider {
     static var previews: some View {
-        CircuitView(flag: "nld", name: "Dutch GP", description: "Circuit Zandvoort", winner: "CSI-SNIPER")
+        CircuitView(flag: "nld", name: "Dutch GP", slug: "dutch-gp", description: "Circuit Zandvoort", winner: "CSI-SNIPER")
     }
 }

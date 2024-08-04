@@ -22,8 +22,8 @@ class Api: ObservableObject {
         }
     }
 
-    func fetchCircuitDetails(circuitName: String) async {
-        guard let url = URL(string: "\(baseURL)/circuits/\(circuitName)") else {
+    func fetchCircuitDetails(circuitSlug: String) async {
+        guard let url = URL(string: "\(baseURL)/circuits/\(circuitSlug)") else {
             return
         }
         print(url)
